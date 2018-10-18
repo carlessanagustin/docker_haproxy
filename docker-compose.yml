@@ -9,4 +9,5 @@ services:
       - ./ssl/haproxy/certs.pem:/certs.pem
     ports:
       - "80:80"
+      - "443:443"
     restart: always
