@@ -6,6 +6,7 @@ services:
     image: haproxy:1.8
     volumes:
       - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+      - ./ssl/haproxy/certs.pem:/certs.pem
     ports:
       - "80:80"
     restart: always

@@ -17,3 +17,11 @@ up:
 
 down:
 	docker-compose down
+
+restart: down up
+
+generate_keys:
+	./bin/create_keys.sh
+
+logs:
+	docker-compose logs -f
